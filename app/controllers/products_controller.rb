@@ -19,11 +19,10 @@ class ProductsController < ApplicationController
 
   def create
     @product = Product.create(product_params)
-    render json: @product
-    # respond_to do |format|
-    #   format.html { render :show }
-    #   format.json { render json: @product }
-    # end
+    respond_to do |format|
+      format.html { render :show }
+      format.json { render json: @product }
+    end
   end
 
   def show
