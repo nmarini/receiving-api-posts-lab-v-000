@@ -1806,3 +1806,23 @@ Processing by ProductsController#create as HTML
 Completed 200 OK in 91ms (Views: 84.0ms | ActiveRecord: 3.1ms)
 
 
+Started GET "/products/new" for 67.189.250.128 at 2019-06-30 20:05:46 +0000
+Cannot render console from 67.189.250.128! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 67.189.250.128 at 2019-06-30 20:05:48 +0000
+Cannot render console from 67.189.250.128! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yL5Y1ANclWRXHI1WknMrRlr4OTrEsa4PmqZUB+YtIQNxYmxWajJhJ0RYtmWmkr09GuN6ThV6vcBWAS1VF7WPcQ==", "product"=>{"name"=>"", "price"=>"", "description"=>"", "inventory"=>""}, "commit"=>"submit"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "products" ("name", "created_at", "updated_at", "description") VALUES (?, ?, ?, ?)[0m  [["name", ""], ["created_at", "2019-06-30 20:05:48.088271"], ["updated_at", "2019-06-30 20:05:48.088271"], ["description", ""]]
+  [1m[35m (3.0ms)[0m  [1m[36mcommit transaction[0m
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 31ms (Views: 25.4ms | ActiveRecord: 3.4ms)
+
+
