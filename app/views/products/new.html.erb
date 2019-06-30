@@ -24,7 +24,6 @@
 $(function () {
   $('form').submit(function(event) {
     event.preventDefault();
-    alert('gotcha!')
 
    var values = $(this).serialize();
    var posting = $.product('/products', values);
