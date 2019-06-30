@@ -21,6 +21,16 @@
 </div>
 
 <script type="text/javascript" charset="utf-8">
+  $(function () {
+    $('form').submit(function(event) {
+      //prevent form from submitting the default way
+      event.preventDefault();
+      alert("we r hack3rz");
+    });
+  });
+</script>
+
+<!-- <script type="text/javascript" charset="utf-8">
 $(function () {
   $('form').submit(function(event) {
     event.preventDefault();
@@ -39,4 +49,4 @@ $(function () {
   });
 
 
-</script>
+</script> -->
