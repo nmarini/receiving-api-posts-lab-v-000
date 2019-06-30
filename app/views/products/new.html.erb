@@ -23,7 +23,7 @@
 <script type="text/javascript" charset="utf-8">
 $(function () {
   $('form').submit(function(event) {
-    preventDefault(event);
+    event.preventDefault();
     alert('gotcha!')
 
     // var values = $(this).serialize();
